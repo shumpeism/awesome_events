@@ -27,7 +27,7 @@
               <li><%= link_to '退会', retire_user_path %></li>
 							<li><%= link_to 'ログアウト', logout_path %></li>
 						<% else %>
-							<li><%= link_to 'Twitterでログイン', user_omniauth_authorize_path(:twitter) %></li>
+							<li><%= link_to 'Twitterでログイン', '/auth/twitter/callback' %></li>
 						<% end %>
 				</ul>
 			</div>
